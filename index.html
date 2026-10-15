@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Casa Ancla</title>
+<meta name="description" content="Casa Ancla: casa de empeño y compraventa en Medellín. Avalúo gratis, dinero en 15 minutos y artículos con garantía.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="anchor" aria-hidden="true">⚓</span>Casa Ancla</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html" class=on aria-current=page>Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir artículos apartados">Apartados <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="hero" id="hero">
+  <span class="fx f1" data-speed="0.3" aria-hidden="true">💍</span><span class="fx f2" data-speed="-0.25" aria-hidden="true">🎸</span><span class="fx f3" data-speed="0.45" aria-hidden="true">⌚</span><span class="fx f4" data-speed="-0.35" aria-hidden="true">📱</span><span class="fx f5" data-speed="0.2" aria-hidden="true">📷</span><span class="fx f6" data-speed="-0.18" aria-hidden="true">💻</span>
+  <span class="coin c1" data-speed="0.5" aria-hidden="true"></span><span class="coin c2" data-speed="-0.4" aria-hidden="true"></span><span class="coin c3" data-speed="0.3" aria-hidden="true"></span>
+  <h1 data-speed="0.1">Tu objeto vale.<br>Tu dinero,<br>hoy.</h1>
+  <p data-speed="0.05">Casa de empeño y compraventa de confianza. Avalúo gratis, contrato claro y dinero en 15 minutos.</p>
+  <div class="row"><a class="btn" href="servicios.html">Simular mi préstamo</a><a class="btn alt" href="productos.html">Ver artículos</a></div>
+  <div class="sticker" data-speed="-0.15">Avalúo gratis y sin compromiso</div>
+</section>
+<section class="wrap">
+  <h2>Así de fácil funciona</h2>
+  <div class="grid4 steps">
+    <div class="card step"><h3>Trae tu objeto</h3><p>Joyas, celulares, instrumentos, herramientas y más. Con tu cédula.</p></div>
+    <div class="card step"><h3>Lo avaluamos</h3><p>Un experto lo revisa contigo, sin costo y en pocos minutos.</p></div>
+    <div class="card step"><h3>Recibes tu dinero</h3><p>Firmas un contrato claro y te pagamos en efectivo o transferencia.</p></div>
+    <div class="card step"><h3>Lo recuperas</h3><p>Pagas el capital más los intereses y te devolvemos tu objeto.</p></div>
+  </div>
+</section>
+<section class="wrap quiz-wrap">
+  <h2>¿Cuánto puedo recibir?</h2>
+  <form class="form quiz" id="quiz">
+    <label>Tipo de artículo<select id="eTipo"><option value="0.7">Joyería de oro o plata</option><option value="0.6">Relojes</option><option value="0.5">Electrónica</option><option value="0.5">Instrumentos musicales</option><option value="0.45">Herramientas</option></select></label>
+    <label>Valor aproximado (en pesos)<input id="eValor" type="number" min="50000" step="10000" value="800000"></label>
+    <button class="btn" type="submit">Calcular</button>
+    <div class="result" id="qOut" role="status">Escribe el valor aproximado y te mostramos el préstamo estimado.</div>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Ofertas en la tienda</h2>
+  <div class="carousel" id="carousel" aria-roledescription="carrusel">
+    <article class="slide on s1"><h3>Semana de las joyas</h3><p>15 % menos en cadenas, anillos y dijes recuperados.</p></article>
+    <article class="slide s2"><h3>Tecnología revisada</h3><p>Celulares y portátiles con 3 meses de garantía.</p></article>
+    <article class="slide s3"><h3>Música a buen precio</h3><p>Guitarras, teclados y saxofones listos para tocar.</p></article>
+    <div class="ctrl"><button id="prev" aria-label="Anterior">Anterior</button><span id="count">1 de 3</span><button id="next" aria-label="Siguiente">Siguiente</button></div>
+  </div>
+</section>
+<section class="band"><div class="wrap"><ul class="stats big"><li><b data-count="18000">0</b> clientes atendidos</li><li><b data-count="15">0</b> minutos de avalúo promedio</li><li><b data-count="98">0</b> % de artículos recuperados</li><li><b data-count="20">0</b> años en Medellín</li></ul></div></section>
+<section class="wrap">
+  <h2>Destacados de la tienda</h2>
+  <div class="grid3"><article class="toy"><div class="pic k0"><span aria-hidden="true">💍</span><em class="age">Como nuevo</em><button class="fav" aria-pressed="false" aria-label="Guardar Anillo de oro 18k en favoritos" data-name="Anillo de oro 18k">♡</button></div><h3>Anillo de oro 18k</h3><p>Joyería</p><div class="buy"><strong>$650.000</strong><button class="btn add" data-name="Anillo de oro 18k" data-price="650000">Apartar</button></div></article><article class="toy"><div class="pic k1"><span aria-hidden="true">⌚</span><em class="age">Muy bueno</em><button class="fav" aria-pressed="false" aria-label="Guardar Reloj automático en favoritos" data-name="Reloj automático">♡</button></div><h3>Reloj automático</h3><p>Relojes</p><div class="buy"><strong>$780.000</strong><button class="btn add" data-name="Reloj automático" data-price="780000">Apartar</button></div></article><article class="toy"><div class="pic k2"><span aria-hidden="true">🎸</span><em class="age">Muy bueno</em><button class="fav" aria-pressed="false" aria-label="Guardar Guitarra acústica en favoritos" data-name="Guitarra acústica">♡</button></div><h3>Guitarra acústica</h3><p>Instrumentos</p><div class="buy"><strong>$520.000</strong><button class="btn add" data-name="Guitarra acústica" data-price="520000">Apartar</button></div></article></div>
+</section>
+<section class="wrap">
+  <h2>Por qué confiar en nosotros</h2>
+  <div class="grid4">
+    <div class="card"><h3>Contrato claro</h3><p>Montos, tasa y fecha límite por escrito.</p></div>
+    <div class="card"><h3>Bodega segura</h3><p>Vigilancia 24 horas y seguro contra robo.</p></div>
+    <div class="card"><h3>Sin letra menuda</h3><p>Sabes cuánto pagas antes de firmar.</p></div>
+    <div class="card"><h3>Prórrogas</h3><p>Si necesitas más tiempo, renuevas pagando solo intereses.</p></div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <div class="grid3">
+    <blockquote class="card quote">Necesitaba plata para una urgencia y en media hora salí con el dinero. Al mes recuperé mi guitarra intacta.<footer>Mauricio T., cliente desde 2021</footer></blockquote>
+    <blockquote class="card quote">Me explicaron todo con calma, sin presionarme. Compré un reloj usado con garantía y funciona perfecto.<footer>Claudia R., compradora</footer></blockquote>
+    <blockquote class="card quote">Les vendí unas joyas heredadas y me pagaron un precio justo, con el avalúo a la vista.<footer>Gloria S., vendedora</footer></blockquote>
+  </div>
+</section>
+<section class="wrap"><form class="form news" id="news" novalidate>
+  <h2>Entérate de lo nuevo en la tienda</h2>
+  <p>Te escribimos solo cuando llegan artículos destacados o hay remates. Sin spam.</p>
+  <div class="row"><input name="email" type="email" placeholder="tucorreo@ejemplo.com" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></div>
+  <small id="newsMsg" role="status"></small>
+</form></section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Casa Ancla</strong><p>Carrera 50 #49-20, Medellín<br>Lunes a sábado, 8 a. m. a 6 p. m.<br>hola@casaancla.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Tu tranquilidad</strong><p>Bodega con vigilancia y seguro.<br>Contrato claro por escrito.<br>Avalúo siempre gratis.</p></div></div><p class="copy">© 2026 Casa Ancla. Tasas, precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

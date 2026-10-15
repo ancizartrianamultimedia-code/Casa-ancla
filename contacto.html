@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Casa Ancla</title>
+<meta name="description" content="Casa Ancla: casa de empeño y compraventa en Medellín. Avalúo gratis, dinero en 15 minutos y artículos con garantía.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="anchor" aria-hidden="true">⚓</span>Casa Ancla</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html" class=on aria-current=page>Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir artículos apartados">Apartados <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap split">
+  <div>
+    <h1>Hablemos</h1>
+    <p class="lead">Cuéntanos qué tienes o qué buscas. Un asesor te responde en menos de 2 horas, sin compromiso.</p>
+    <p><b>Dirección:</b> Carrera 50 #49-20, Medellín<br><b>Horario:</b> Lunes a sábado, 8 a. m. a 6 p. m.<br><b>WhatsApp:</b> 300 222 3344</p>
+  </div>
+  <form id="form" class="form" novalidate>
+    <label>Nombre<input name="nombre" type="text" autocomplete="name"><small></small></label>
+    <label>Correo<input name="correo" type="email" autocomplete="email"><small></small></label>
+    <label>Tema<select name="tema"><option value="">Elige uno</option><option>Quiero empeñar un artículo</option><option>Quiero vender un artículo</option><option>Quiero renovar mi contrato</option><option>Pregunta sobre un artículo apartado</option><option>Otro</option></select><small></small></label>
+    <label>Mensaje<textarea name="mensaje" rows="4"></textarea><small></small></label>
+    <button class="btn" type="submit">Enviar mensaje</button>
+    <p id="ok" role="status"></p>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Nuestras sedes</h2>
+  <div class="grid3">
+    <div class="card"><h3>Centro</h3><p>Carrera 50 #49-20. Sede principal con bodega y sala de compraventa.</p></div>
+    <div class="card"><h3>Laureles</h3><p>Circular 4 #70-15. Avalúo de joyas y electrónica.</p></div>
+    <div class="card"><h3>Envigado</h3><p>Calle 37 Sur #43-10. Empeño y renovación de contratos.</p></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Casa Ancla</strong><p>Carrera 50 #49-20, Medellín<br>Lunes a sábado, 8 a. m. a 6 p. m.<br>hola@casaancla.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Tu tranquilidad</strong><p>Bodega con vigilancia y seguro.<br>Contrato claro por escrito.<br>Avalúo siempre gratis.</p></div></div><p class="copy">© 2026 Casa Ancla. Tasas, precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

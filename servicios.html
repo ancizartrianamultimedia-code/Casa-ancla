@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Casa Ancla</title>
+<meta name="description" content="Casa Ancla: casa de empeño y compraventa en Medellín. Avalúo gratis, dinero en 15 minutos y artículos con garantía.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="anchor" aria-hidden="true">⚓</span>Casa Ancla</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html" class=on aria-current=page>Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir artículos apartados">Apartados <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap">
+  <h1>Servicios</h1>
+  <p class="lead">Préstamos con respaldo, compra directa y venta de artículos revisados, todo con contrato claro.</p>
+  <div class="grid2">
+    <div class="card"><h3>Empeño de artículos</h3><p>Dejas un objeto de respaldo, recibes dinero al instante y lo recuperas cuando pagues.</p></div>
+    <div class="card"><h3>Compra directa</h3><p>Si prefieres vender, te hacemos una oferta inmediata y te pagamos en el acto.</p></div>
+    <div class="card"><h3>Avalúo gratuito</h3><p>Revisamos tu artículo con referencias del mercado, sin costo ni compromiso.</p></div>
+    <div class="card"><h3>Venta con garantía</h3><p>Artículos recuperados y revisados, con garantía de hasta 3 meses.</p></div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Tasas y plazos de ejemplo</h2>
+  <div class="table-wrap"><table class="tbl"><thead><tr><th>Categoría</th><th>Préstamo máximo</th><th>Interés mensual</th><th>Plazo</th></tr></thead><tbody>
+    <tr><td>Joyería de oro y plata</td><td>Hasta 70 % del avalúo</td><td>3 %</td><td>1 a 4 meses</td></tr>
+    <tr><td>Relojes</td><td>Hasta 60 % del avalúo</td><td>3,5 %</td><td>1 a 4 meses</td></tr>
+    <tr><td>Electrónica</td><td>Hasta 50 % del avalúo</td><td>3,5 %</td><td>1 a 3 meses</td></tr>
+    <tr><td>Instrumentos musicales</td><td>Hasta 50 % del avalúo</td><td>3,5 %</td><td>1 a 3 meses</td></tr>
+    <tr><td>Herramientas</td><td>Hasta 45 % del avalúo</td><td>4 %</td><td>1 a 3 meses</td></tr>
+  </tbody></table></div>
+  <p class="lead" style="margin-top:1rem;font-size:1rem">Valores de ejemplo para este proyecto. Las condiciones reales se confirman en la tienda.</p>
+</section>
+<section class="wrap">
+  <h2>Simula cuánto pagarías</h2>
+  <form class="form calc" id="calc">
+    <label>Dinero que necesitas (en pesos)<input id="cMonto" type="number" min="50000" step="10000" value="500000"></label>
+    <label>Plazo<select id="cPlazo"><option value="1">1 mes</option><option value="2" selected>2 meses</option><option value="3">3 meses</option><option value="4">4 meses</option></select></label>
+    <button class="btn" type="submit">Calcular</button>
+    <p id="cOut" role="status">Indica cuánto necesitas y el plazo para ver el costo total.</p>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Documentos que necesitas</h2>
+  <div class="grid3">
+    <div class="card"><h3>Cédula original</h3><p>Del dueño del artículo. Si eres extranjero, pasaporte o cédula de extranjería.</p></div>
+    <div class="card"><h3>El artículo completo</h3><p>Con cargador, caja o accesorios si los tiene: sube su valor.</p></div>
+    <div class="card"><h3>Factura o garantía</h3><p>Si la conservas, el avalúo es más rápido. No es obligatoria.</p></div>
+  </div>
+</section>
+<section class="wrap narrow">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Qué pasa si no alcanzo a pagar a tiempo?</summary><p>Puedes renovar el contrato pagando solo los intereses causados. Si no renuevas, el artículo pasa a venta tras 30 días de gracia.</p></details>
+  <details><summary>¿Mis objetos están asegurados?</summary><p>Sí. Se guardan en bodega con vigilancia las 24 horas y póliza contra robo e incendio.</p></details>
+  <details><summary>¿Puedo recuperar mi artículo antes del plazo?</summary><p>Sí, en cualquier momento. Solo pagas los intereses de los días transcurridos.</p></details>
+  <details><summary>¿Puede otra persona recoger por mí?</summary><p>Sí, con una carta de autorización firmada y copia de tu cédula.</p></details>
+</section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Casa Ancla</strong><p>Carrera 50 #49-20, Medellín<br>Lunes a sábado, 8 a. m. a 6 p. m.<br>hola@casaancla.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Tu tranquilidad</strong><p>Bodega con vigilancia y seguro.<br>Contrato claro por escrito.<br>Avalúo siempre gratis.</p></div></div><p class="copy">© 2026 Casa Ancla. Tasas, precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>
